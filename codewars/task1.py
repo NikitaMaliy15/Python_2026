@@ -5,8 +5,15 @@ The binary number returned should be g string."""
 g = int(input())
 b = ''
 
+def add(a, r):
+    global r
+    r = a + r
+    return r
+
 while g > 0:
     b = str(g % 2) + b
     g = g // 2
+    e = g + add(5, 7)
 
-    print((b + g) * 5)
+
+    print((b, e) * 5)
