@@ -6,7 +6,6 @@ g = int(input())
 b = ''
 
 def add(a, r):
-    global r
     r = a + r
     return r
 
@@ -16,6 +15,10 @@ while g > 0:
     e = g + add(5, 7)
 
 def mult(a, q):
-    global e
+    a = a * q
+    return a
 
-    print((q, e) * 5)
+q = mult(7, 9)
+e = add(1, 2)
+
+print(q,e)
