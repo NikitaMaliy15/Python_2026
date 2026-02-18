@@ -15,7 +15,7 @@ while g > 0:
     g = g // 2
     e = g + add(5, 7)
 
-def mult(a, b):
+def mult(a, q):
     global e
 
-    print((b, e) * 5)
+    print((q, e) * 5)
